@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Home from 'components/Home';
-import Preloader from 'components/Pre';
+import Loader from 'components/Loader';
 
 function App() {
 	const [load, upadateLoad] = useState(true);
@@ -15,17 +15,21 @@ function App() {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			upadateLoad(false);
-		}, 1500);
+		}, 500);
 
 		return () => clearTimeout(timer);
 	}, []);
+
 	return (
 		<Router>
-			<Preloader load={load} />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='*' element={<Navigate to='/' />} />
-			</Routes>
+			{load ? (
+				<Loader />
+			) : (
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='*' element={<Navigate to='/' />} />
+				</Routes>
+			)}
 		</Router>
 	);
 }
