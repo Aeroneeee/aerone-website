@@ -5,6 +5,7 @@ import {
 	Routes,
 	Navigate,
 } from 'react-router-dom';
+// import { Container } from '@chakra-ui/react';
 
 import Home from 'components/Home';
 import Loader from 'components/Loader';
