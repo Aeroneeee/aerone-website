@@ -1,10 +1,7 @@
 import React from 'react';
-
 import {
-	Container,
 	Center,
 	Flex,
-	Box,
 	Heading,
 	Text,
 	Stack,
@@ -12,6 +9,8 @@ import {
 	VStack,
 } from '@chakra-ui/react';
 import Tilt from 'react-parallax-tilt';
+
+import profile from 'assets/profile.png';
 
 function Home() {
 	return (
@@ -37,11 +36,7 @@ function Home() {
 					</Center>
 				</Stack>
 				<Tilt tiltReverse>
-					<Image
-						src='/src/assets/profile.png'
-						alt='Aerone Pamintuan'
-						boxSize='400'
-					/>
+					<Image src={profile} alt='Aerone Pamintuan' boxSize='400' />
 				</Tilt>
 			</Flex>
 		</Center>
