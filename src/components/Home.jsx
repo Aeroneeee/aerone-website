@@ -38,7 +38,7 @@ function Home() {
 					</Center>
 				</Stack>
 				<Center>
-					<Tilt tiltReverse>
+					<Tilt tiltReverse gyroscope>
 						<Image
 							src={profile}
 							alt='Aerone Pamintuan'
