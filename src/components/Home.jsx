@@ -14,12 +14,14 @@ import profile from 'assets/profile.png';
 
 function Home() {
 	return (
-		<Center mt='8em' mx='16em'>
-			<Flex justifyContent='space-between'>
+		<Center mt='8em' mx={['4em', '16em']}>
+			<Flex
+				justifyContent='space-between'
+				direction={['column-reverse', 'row']}
+			>
 				<Stack>
 					<Text>👋 Hi, I’m</Text>
 					<Center ml='2em'>
-						{/* <Text size='7em'>AERONE</Text> */}
 						<VStack spacing='0'>
 							<Heading as='h1' size='4xl' textAlign='center'>
 								AERONE
@@ -28,16 +30,22 @@ function Home() {
 								as='h1'
 								size='2xl'
 								textAlign='center'
-								letterSpacing='2px'
+								letterSpacing={['4px', '2px']}
 							>
 								PAMINTUAN
 							</Heading>
 						</VStack>
 					</Center>
 				</Stack>
-				<Tilt tiltReverse>
-					<Image src={profile} alt='Aerone Pamintuan' boxSize='400' />
-				</Tilt>
+				<Center>
+					<Tilt tiltReverse>
+						<Image
+							src={profile}
+							alt='Aerone Pamintuan'
+							boxSize={['200', '400']}
+						/>
+					</Tilt>
+				</Center>
 			</Flex>
 		</Center>
 	);
