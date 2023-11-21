@@ -19,10 +19,6 @@ export default extendTheme({
 	// 	secondary: '#009400',
 	// 	text: mode('#FF0', '#00F')(props),
 	// }),
-	// fonts: {
-	// 	heading: `'Manrope', sans-serif`,
-	// 	body: `'Manrope', sans-serif`,
-	// },
 	config: {
 		initialColorMode: 'dark',
 		useSystemColorMode: true,

@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+	Box,
 	Center,
 	Flex,
 	Heading,
@@ -7,17 +8,29 @@ import {
 	Stack,
 	Image,
 	VStack,
+	useColorMode,
+	IconButton,
 } from '@chakra-ui/react';
-import Tilt from 'react-parallax-tilt';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 
 import profile from 'assets/profile.png';
 
 function Home() {
+	const { colorMode, toggleColorMode } = useColorMode();
+	// const Icon = (colorMode = 'light' ? SunIcon : MoonIcon);
+
 	return (
-		<Center mt='8em' mx={['4em', '16em']}>
+		<Box mt={['2em', '8em']} mx={['2em', '8em']}>
+			<Flex justifyContent='center' mb='2em'>
+				<IconButton
+					onClick={toggleColorMode}
+					icon={colorMode == 'light' ? <SunIcon /> : <MoonIcon />}
+				/>
+			</Flex>
 			<Flex
-				justifyContent='space-between'
+				justifyContent='center'
 				direction={['column-reverse', 'row']}
+				gap={['1em', '4em']}
 			>
 				<Stack>
 					<Text>👋 Hi, I’m</Text>
@@ -38,16 +51,21 @@ function Home() {
 					</Center>
 				</Stack>
 				<Center>
-					<Tilt tiltReverse gyroscope>
-						<Image
-							src={profile}
-							alt='Aerone Pamintuan'
-							boxSize={['200', '400']}
-						/>
-					</Tilt>
+					<Image
+						src={profile}
+						alt='Aerone Pamintuan'
+						boxSize={['200', '400']}
+					/>
 				</Center>
 			</Flex>
-		</Center>
+			<Flex justifyContent='space-between' w={['15em', '48em']}>
+				<Text>test</Text>
+				<Box>
+					<Heading>Solving Problems,</Heading>
+					<Heading>One line of code at a time</Heading>
+				</Box>
+			</Flex>
+		</Box>
 	);
 }
 

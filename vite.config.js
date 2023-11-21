@@ -13,4 +13,7 @@ export default defineConfig({
 			lotties: '/src/lotties',
 		},
 	},
+	server: {
+		host: true,
+	},
 });
