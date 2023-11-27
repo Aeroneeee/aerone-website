@@ -14,10 +14,14 @@ export default extendTheme({
 		body: 'Manrope',
 		heading: 'Manrope',
 	},
+	colors: {
+		primary: '#007ACC',
+		secondary: '#009400',
+	},
 	// colors: (props) => ({
-	// 	primary: mode('#e6f6e6', '#003100')(props),
+	// 	primary: '#007ACC',
 	// 	secondary: '#009400',
-	// 	text: mode('#FF0', '#00F')(props),
+	//  text: mode('#FF0', '#00F')(props),
 	// }),
 	config: {
 		initialColorMode: 'dark',

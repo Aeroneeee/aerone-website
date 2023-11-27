@@ -2,7 +2,7 @@ import { useLottie } from 'lottie-react';
 import loaderAnimation from 'lotties/loader.json';
 
 const style = {
-	height: 300,
+	height: 200,
 };
 
 const Loader = () => {
@@ -14,7 +14,7 @@ const Loader = () => {
 
 	const { View, setSpeed } = useLottie(options, style);
 
-	setSpeed(2);
+	// setSpeed(2);
 
 	return View;
 };

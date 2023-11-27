@@ -17,12 +17,12 @@ import profile from 'assets/profile.png';
 
 function Home() {
 	const { colorMode, toggleColorMode } = useColorMode();
-	// const Icon = (colorMode = 'light' ? SunIcon : MoonIcon);
 
 	return (
 		<Box mt={['2em', '8em']} mx={['2em', '8em']}>
 			<Flex justifyContent='center' mb='2em'>
 				<IconButton
+					color='primary'
 					onClick={toggleColorMode}
 					icon={colorMode == 'light' ? <SunIcon /> : <MoonIcon />}
 				/>
@@ -58,11 +58,20 @@ function Home() {
 					/>
 				</Center>
 			</Flex>
-			<Flex justifyContent='space-between' w={['15em', '48em']}>
+			<Flex justifyContent='center' w={['15em', '48em']}>
 				<Text>test</Text>
 				<Box>
 					<Heading>Solving Problems,</Heading>
 					<Heading>One line of code at a time</Heading>
+					<Text>
+						Senior Software Engineer with 3 years of experience in
+						JavaScript and SQL. I have a solid track record of
+						delivering projects on time and have experience in
+						front-end development using React.js, as well as
+						back-end tasks with Node.js. I hold Google Cloud
+						certifications, demonstrating my commitment to
+						professional growth.
+					</Text>
 				</Box>
 			</Flex>
 		</Box>
