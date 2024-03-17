@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import { Center, Flex, useColorMode } from '@chakra-ui/react';
 
-import Home from 'components/Home';
+import Main from 'components/Main';
 import Loader from 'components/Loader';
 import Background from 'components/Background';
 
@@ -26,7 +26,6 @@ function App() {
 
 	return (
 		<Router>
-			{colorMode == 'dark' && <Background />}
 			{load ? (
 				<Flex
 					width='100vw'
@@ -39,10 +38,13 @@ function App() {
 					</Center>
 				</Flex>
 			) : (
-				<Routes>
-					<Route path='/' element={<Home />} />
-					<Route path='*' element={<Navigate to='/' />} />
-				</Routes>
+				<>
+					{colorMode == 'dark' && <Background />}
+					<Routes>
+						<Route path='/' element={<Main />} />
+						<Route path='*' element={<Navigate to='/' />} />
+					</Routes>
+				</>
 			)}
 		</Router>
 	);

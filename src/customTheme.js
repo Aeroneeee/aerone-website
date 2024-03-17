@@ -18,6 +18,11 @@ export default extendTheme({
 		primary: '#007ACC',
 		secondary: '#009400',
 	},
+	// components: (props) => ({
+	// 	Heading: {
+	// 		color: mode('#FF0', '#00F')(props),
+	// 	},
+	// }),
 	// colors: (props) => ({
 	// 	primary: '#007ACC',
 	// 	secondary: '#009400',
