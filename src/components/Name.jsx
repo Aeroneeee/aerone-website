@@ -14,8 +14,8 @@ import profile from 'assets/profile.png';
 function Name() {
 	return (
 		<Flex
-			justifyContent='center'
-			direction={['column-reverse', 'row']}
+			justify='center'
+			direction={['column-reverse', 'column-reverse', 'row']}
 			gap={['1em', '4em']}
 		>
 			<Stack>
@@ -41,6 +41,8 @@ function Name() {
 					src={profile}
 					alt='Aerone Pamintuan'
 					boxSize={['200', '400']}
+					width='100%'
+					height='100%'
 				/>
 			</Center>
 		</Flex>

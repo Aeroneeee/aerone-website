@@ -4,7 +4,7 @@ import './styles.css';
 
 const Background = () => {
 	const starSize = 10;
-	const starMoveSpeed = 0.0005;
+	const starMoveSpeed = 0.001;
 	const starCount = 100;
 	const [stars, setStars] = useState([]);
 	const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -59,7 +59,6 @@ const Background = () => {
 							(cursorPosition.y - window.innerHeight / 2) *
 								starMoveSpeed *
 								star.z,
-						transform: 'left 0.5s ease, top 0.5s ease',
 						width: `${star.z / starSize}px`,
 						height: `${star.z / starSize}px`,
 					}}
