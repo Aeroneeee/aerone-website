@@ -9,7 +9,7 @@ function Main() {
 	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
-		<Box mt={['2em', '8em']} mx={['2em', '8em']}>
+		<Box my={['2em', '8em']} mx={['2em', '8em']}>
 			<Flex justifyContent='center' mb='2em'>
 				<IconButton
 					color='primary'
