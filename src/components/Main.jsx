@@ -9,8 +9,8 @@ function Main() {
 	const { colorMode, toggleColorMode } = useColorMode();
 
 	return (
-		<Box my={['2em', '8em']} mx={['2em', '8em']}>
-			<Flex justifyContent='center' mb='2em'>
+		<Flex m='2.5em' flexDirection={['column']} gap={'2em'}>
+			<Flex justifyContent='center'>
 				<IconButton
 					color='primary'
 					onClick={toggleColorMode}
@@ -19,7 +19,7 @@ function Main() {
 			</Flex>
 			<Name />
 			<Description />
-		</Box>
+		</Flex>
 	);
 }
 

@@ -13,9 +13,14 @@ function Description() {
 		{ src: GCPIcon, alt: 'GCP icon' },
 	];
 	return (
-		<Flex align='center' justify='center' gap={16}>
+		<Flex
+			align='center'
+			justify='center'
+			gap='2.5em'
+			flexDirection={['column', 'row']}
+		>
 			<Flex flex={3} justify='end'>
-				<Grid templateColumns='repeat(2, 8em)' gap={4}>
+				<Grid templateColumns='repeat(2, 8em)' gap={['2em', '1em']}>
 					{icons.map(({ src, alt }, index) => (
 						<Box key={index} w='8em' h='8em'>
 							<img
