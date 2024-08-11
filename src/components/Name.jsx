@@ -16,7 +16,7 @@ function Name() {
 		<Flex
 			justify='center'
 			direction={['column-reverse', 'column-reverse', 'row']}
-			gap={['1em', '4em']}
+			gap={['1em', '1em', '4em']}
 		>
 			<Stack>
 				<Text>👋 Hi, I’m</Text>
@@ -29,7 +29,7 @@ function Name() {
 							as='h1'
 							size='2xl'
 							textAlign='center'
-							letterSpacing={['4px', '2px']}
+							letterSpacing={['4px', '4px', '2px']}
 						>
 							PAMINTUAN
 						</Heading>
@@ -40,9 +40,8 @@ function Name() {
 				<Image
 					src={profile}
 					alt='Aerone Pamintuan'
-					boxSize={['200', '400']}
-					width='100%'
-					height='100%'
+					boxSize={['300', '300', '400']}
+					minWidth='fit-content'
 				/>
 			</Center>
 		</Flex>

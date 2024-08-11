@@ -17,10 +17,13 @@ function Description() {
 			align='center'
 			justify='center'
 			gap='2.5em'
-			flexDirection={['column', 'row']}
+			flexDirection={['column', 'column', 'row']}
 		>
 			<Flex flex={3} justify='end'>
-				<Grid templateColumns='repeat(2, 8em)' gap={['2em', '1em']}>
+				<Grid
+					templateColumns='repeat(2, 8em)'
+					gap={['2em', '2em', '1em']}
+				>
 					{icons.map(({ src, alt }, index) => (
 						<Box key={index} w='8em' h='8em'>
 							<img
