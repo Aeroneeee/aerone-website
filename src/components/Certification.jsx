@@ -55,6 +55,7 @@ function Certification() {
 							flexDir={'column'}
 						>
 							<Heading>Google Cloud</Heading>
+							{/* TODO: Make it centered when on mobile */}
 							<Heading>{cert.title}</Heading>
 							<Text>{cert.date}</Text>
 						</Flex>

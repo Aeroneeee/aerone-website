@@ -20,17 +20,12 @@ function Name() {
 		>
 			<Stack>
 				<Text>👋 Hi, I’m</Text>
-				<Center ml='2em'>
+				<Center ml={['0em', '0em', '2em']}>
 					<VStack spacing='0'>
 						<Heading as='h1' size='4xl' textAlign='center'>
 							AERONE
 						</Heading>
-						<Heading
-							as='h1'
-							size='2xl'
-							textAlign='center'
-							letterSpacing={['4px', '4px', '2px']}
-						>
+						<Heading as='h1' size='2xl' textAlign='center'>
 							PAMINTUAN
 						</Heading>
 					</VStack>
@@ -41,7 +36,7 @@ function Name() {
 					src={profile}
 					alt='Aerone Pamintuan'
 					boxSize={['300', '300', '400']}
-					minWidth='fit-content'
+					minWidth={['auto', 'auto', 'fit-content']}
 				/>
 			</Center>
 		</Flex>

@@ -10,10 +10,6 @@ export default extendTheme({
 			},
 		}),
 	},
-	fonts: {
-		body: 'Manrope',
-		heading: 'Manrope',
-	},
 	colors: {
 		primary: '#007ACC',
 		secondary: '#009400',

@@ -39,7 +39,7 @@ function App() {
 				</Flex>
 			) : (
 				<>
-					{colorMode == 'dark' && <Background />}
+					{colorMode === 'dark' && <Background />}
 					<Routes>
 						<Route path='/' element={<Main />} />
 						<Route path='*' element={<Navigate to='/' />} />
